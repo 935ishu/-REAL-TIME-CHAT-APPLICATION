@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+REAL-TIME-CHAT-APPLICATION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+COMPANY :CODTECH IT SOLUTIONS
 
-## Available Scripts
+NAME :HARIJANA ISWARYA
 
-In the project directory, you can run:
+INTERN ID :CT04DK692
 
-### `npm start`
+DOMAIN :MERN STACK WEB DEVELOPMENT
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+DURATION:4 WEEKS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+MENTOR:NEELA SANTHOSH
 
-### `npm test`
+Real-Time Chat Application using MERN and Socket.IO
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The goal of Task 1 was to design and develop a Real-Time Chat Application using the MERN stack (MongoDB, Express, React, Node.js) along with Socket.IO for real-time communication. The project allows multiple users to connect, register with a username, join a global chat, and exchange messages instantly — including private messaging between users. This task was a hands-on implementation of how real-time systems work using WebSockets, and it emphasizes event-driven architecture in modern web development.
 
-### `npm run build`
+We started by setting up the backend server using Node.js and Express. Socket.IO was integrated to manage the WebSocket connections. When a user connects, the server listens for events like new-user, send-message, or private-message. All active users are stored in a dictionary to maintain mapping between usernames and socket IDs. This enabled us to broadcast public messages to all users and private messages to specific individuals using their socket IDs. The backend also handled the logic for maintaining an updated list of online users and informing all connected clients whenever a new user joins or someone disconnects.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+On the frontend, we used React to build a responsive and interactive user interface. Initially, users are prompted to enter a username to join the chat. Upon registration, their username is shared with the server via a Socket.IO connection, and the main chat interface is displayed. Users can type and send messages, which are broadcast to all users in real-time. The frontend listens for incoming messages and dynamically updates the chat window using React hooks like useEffect and useState. The message format includes the sender’s name, content, and whether it’s public or private.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A key feature in the chat app is the support for private messaging. Users can click on a username from the online users list to initiate a private message. This message is only visible to the sender and the selected recipient. The system uses Socket.IO’s targeted messaging capability to route private messages directly to the recipient's socket.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We also included basic frontend validations — such as not allowing empty usernames or empty messages. Styling was kept minimal but clean using CSS to ensure clarity and responsiveness across screen sizes. We used the local server for development, but the system is fully compatible with deployment to cloud platforms like Render, Vercel, or Heroku.
 
-### `npm run eject`
+This task helped solidify concepts of real-time bidirectional communication, event handling, user sessions, and client-server synchronization. It also provided valuable experience integrating multiple technologies (React frontend with a Node.js + Socket.IO backend) in a single working product.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Overall, the Real-Time Chat App demonstrates how to build a collaborative, low-latency system using the MERN stack — an essential skill for full-stack developers. The project can be extended further by adding authentication, message persistence using MongoDB, user avatars, typing indicators, and chat rooms. This foundational task also sets the stage for understanding real-time updates, which can be used in future applications like collaborative editing tools, multiplayer games, or live dashboards.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
