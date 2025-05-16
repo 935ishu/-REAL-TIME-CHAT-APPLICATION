@@ -28,5 +28,8 @@ This task helped solidify concepts of real-time bidirectional communication, eve
 
 Overall, the Real-Time Chat App demonstrates how to build a collaborative, low-latency system using the MERN stack — an essential skill for full-stack developers. The project can be extended further by adding authentication, message persistence using MongoDB, user avatars, typing indicators, and chat rooms. This foundational task also sets the stage for understanding real-time updates, which can be used in future applications like collaborative editing tools, multiplayer games, or live dashboards.
 
+output:
+
+![Image](https://github.com/user-attachments/assets/fa0d7a65-b147-4606-83e3-fe215869ca7a)
 
 
